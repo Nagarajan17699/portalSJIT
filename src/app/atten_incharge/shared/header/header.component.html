@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-sm navbar-dark" style=" height:100px; color:white;background-color: #303030;">
+    <a href="www.stjosephstechnology.ac.in" class="logo"><img src="../assets/Media/sjitLogo.png" width="80px" height="80px"></a>
+
+    <div style="padding-left: 360px;  font-size: 20px;color:white;">
+    <ul class="navbar-nav">
+              
+        <button mat-button  href="#" routerLink="/home" routerLinkActive="active" style="color: white;">HOME</button>
+     
+      
+        <button mat-button [matMenuTriggerFor]="report">ATTENDANCE REPORT</button>
+           <mat-menu #report="matMenu">
+                <a class="dropdown-item mat-menu-item" href="#" routerLink="/sem_report" routerLinkActive="active" style="color: white;">Semester Report</a>
+                   <hr>
+                <a class="dropdown-item mat-menu-item" href="#" routerLink="/daily_report" routerLinkActive="active" style="color: white;">Daily Report</a>
+           </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="update">UPDATE ATTENDANCE</button>
+           <mat-menu #update="matMenu">
+                <a class="dropdown-item mat-menu-item" href="#" routerLink="/mark_ab" routerLinkActive="active" style="color: white;">Mark Absentees</a>
+                   <hr>
+                <a class="dropdown-item mat-menu-item" href="#" routerLink="/edit_ab" routerLinkActive="active" style="color: white;">Edit</a>
+           </mat-menu>
+     
+        
+        <button mat-button  href="#" routerLink="/outpass" routerLinkActive="active" style="color: white;">GRANT OUTPASS</button>
+     
+        
+        <button mat-button  href="#" routerLink="/sms" routerLinkActive="active" style="color: white;">SMS</button>
+     
+                  
+        <button mat-button [matMenuTriggerFor]="fee">FEE</button>
+           <mat-menu #fee="matMenu">
+               <a class="dropdown-item mat-menu-item" href="#" routerLink="/basic_Fee" routerLinkActive="active" style="color: white;">Basic Fee</a>
+                     <hr>
+               <a class="dropdown-item mat-menu-item" href="#" routerLink="/special_Fee" routerLinkActive="active" style="color: white;">Individual Fee</a>
+                     <hr>
+               <a class="dropdown-item mat-menu-item" href="#" routerLink="/challan" routerLinkActive="active" style="color:white;">Payment View</a>
+           </mat-menu>
+      
+
+        <button mat-button [matMenuTriggerFor]="student">STUDENT UPDATE</button>
+          <mat-menu #student="matMenu">
+                <a class="dropdown-item mat-menu-item" href="#" routerLink="/update" routerLinkActive="active" style="color: white;">Section</a> 
+          </mat-menu>
+
+    </ul>
+  
+</div>
+
+</nav>

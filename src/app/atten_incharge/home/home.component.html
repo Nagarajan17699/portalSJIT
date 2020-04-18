@@ -1,0 +1,36 @@
+
+<app-atten_header></app-atten_header>
+
+<br><br>
+
+<mat-card class="text-center container" style=" background-color: white;">
+    <mat-card-title style=" height:56px;background-color: #303030; color: white;padding-top: 8px;font-size:28px;">Circulars</mat-card-title>
+  
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" style="color:black;">
+        
+        <mat-tab label="CIRCULARS">
+          <div class="list-group text-left" style="max-height: 250px;overflow-y: scroll;">
+             <li *ngFor="let cir of circulars"> {{cir}} </li>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="EVENTS"> 
+          <div class="list-group text-left" style="max-height: 250px;overflow-y: scroll;">
+            <li *ngFor="let ev of events">  {{ev}} </li>
+          </div>
+        </mat-tab>
+  
+      </mat-tab-group>   
+  
+
+
+<div class="card-footer text-muted">
+    10 days ago
+</div>
+
+</mat-card>
+
+
+<br><br><br><br>
+
+<app-atten_footer></app-atten_footer>

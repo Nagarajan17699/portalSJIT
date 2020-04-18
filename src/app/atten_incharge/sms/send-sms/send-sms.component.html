@@ -1,0 +1,43 @@
+<br><br><br><br><br>
+
+
+<div class="card-title text-center container " style=" height:56px;background-color: #303030; color: white;padding-top: 8px;font-size:28px;">Confirm List</div>
+<br><br>
+<div class="table-responsive container">
+    <table class="table table-bordered">
+      
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" (change)="selectAll()" [checked]="selectedAll">
+          </th> 
+          <th>Rollno</th>
+          <th>Name</th>
+          <th>Reason</th>
+          <th>Content</th>
+          <th>Delivery</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr *ngFor = "let detail of sms">
+          <td>
+            <input type="checkbox"  [(ngModel)]="detail.selected" (change)="checkIfAllSelected()">
+          </td>
+          <td>{{detail.rollno}}</td>
+          <td>{{detail.name}}</td>
+          <td>{{detail.reason}}</td>
+          <td>{{detail.content}}</td>
+          <td>{{detail.delivery}}</td>
+               
+        </tr>
+      </tbody>
+   
+    </table>
+  </div>
+
+<br>
+                
+  <button  type="submit" (click)="onclick()" class="btn btn-dark mx-auto d-block" >Submit</button>
+                         
+                

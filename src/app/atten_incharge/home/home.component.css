@@ -1,0 +1,15 @@
+li
+{
+    line-height:300%;
+    padding-left: 10px;
+}
+/* 
+::ng-deep .mat-focused .mat-form-field-label {
+    
+    color:black !important;
+   } */
+
+   ::ng-deep.mat-tab-label
+    {
+      color:black ;
+    }

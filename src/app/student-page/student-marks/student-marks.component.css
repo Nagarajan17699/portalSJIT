@@ -1,0 +1,22 @@
+::ng-deep .mat-input-wrapper{
+    width:400px !important;
+  }
+
+  
+  .container{
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    width:80%;
+   }
+
+   .box-padding{
+       padding-top: 10%;
+       
+   }
+
+   .box-shadows{
+    box-shadow: 10px 10px 10px grey;
+   }

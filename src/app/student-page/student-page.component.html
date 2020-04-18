@@ -1,0 +1,122 @@
+<app-headercomp></app-headercomp>
+<div class="container-fluid">
+  <div class="row spacing-bw-content" style="padding: 10px;">
+    <div class="col-sm-3" style="padding: 0px 20px;">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Name</mat-card-title>
+
+          <span>
+            <mat-chip-list aria-label="catagory">
+              <mat-chip color="warn" selected>Student</mat-chip>
+            </mat-chip-list>
+          </span>
+
+        </mat-card-header>
+        <img mat-card-image
+          src="https://previews.123rf.com/images/bsd555/bsd5551804/bsd555180400213/98948737-graduate-student-color-icon-person-in-academic-dress-isolated-vector-illustration.jpg"
+          alt="Student Photo" width="150px" height="200px" id="dp">
+        <mat-card-actions style="text-align: center;">
+          <button mat-raised-button color="accent">Know More</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-sm-9" id="notif">
+
+      <mat-tab-group color="accent" backgroundColor="accent" id="notif-header">
+
+        <mat-tab label="SMS">
+          <div class="notif-content-spacing">
+
+
+
+            Content 1
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+
+
+          </div>
+        </mat-tab>
+        <mat-tab label="Email">
+          <div class="notif-content-spacing">Content 2</div>
+        </mat-tab>
+
+      </mat-tab-group>
+
+    </div>
+
+  </div>
+
+  <div class="row spacing-bw-content">
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-10" id="circular">
+      <mat-tab-group color="accent" backgroundColor="accent">
+        <mat-tab label="College">
+          <div class="notif-content-spacing">
+            Content 1
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Department"> Department </mat-tab>
+        <mat-tab label="Events"> Events </mat-tab>
+      </mat-tab-group>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+  </div>
+
+  <div class="row spacing-bw-content-nr-footer" id="foot">
+    <div class="col-sm-6">
+      <div id="footnotes">
+        <mat-card class="example-card">
+
+          <img mat-card-image
+            src="https://cdn0.iconfinder.com/data/icons/zlico-education-1-lineal-color/64/Notes_1-512.png"
+            alt="Student notes" width="0px" height="200px" id="notesicon">
+          <mat-card-actions>
+            <button mat-raised-button color="accent">Notes</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div id="footnotes">
+        <mat-card class="example-card">
+          <img mat-card-image
+            src="https://cdn2.iconfinder.com/data/icons/marketing-management-color/64/result-report-conclusion-document-success-research-work-512.png"
+            alt="Student notes" width="0px" height="200px" id="notesicon">
+          <mat-card-actions>
+            <button mat-raised-button color="accent">Marks</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

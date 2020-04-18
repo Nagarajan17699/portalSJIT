@@ -1,0 +1,13 @@
+ul li
+{
+    padding-right: 24px;
+}
+
+ul li a {
+    color:white;
+}
+
+hr{
+    padding: 0px;
+    margin: 0px;    
+  }
